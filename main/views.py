@@ -4,4 +4,14 @@ from django.views import View
 
 class index(View):
     def get(self ,request):
-        return render(request,'main/index.html')
+        context = {
+            "footer" : True
+        }
+        return render(request,'main/index.html', context)
+
+class about(View):
+    def get(self, request):
+        context = {
+            "footer" : False
+        }
+        return render(request, 'main/about.html' , context)
