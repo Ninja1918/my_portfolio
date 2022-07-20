@@ -1,56 +1,102 @@
 {% extends 'global/base.html' %}
 {% block nav-bar %}
 
-	<li class="colorlib-active"><a href={% url 'indexPage' %}>Home</a></li>
-	{% comment %} <li><a href="photography.html">Skills</a></li>
-	<li><a href="travel.html">Travel</a></li>
-	<li><a href="fashion.html">Fashion</a></li> {% endcomment %}
-	<li><a href={% url 'aboutPage' %}>About</a></li>
-	{% comment %} <li><a href="contact.html">Contact</a></li> {% endcomment %}
+<li class="colorlib-active"><a href={% url 'indexPage' %}>Home</a></li>
+<li><a href={% url 'certificationPage' %}>Certifications & CP Profiles</a></li>
+{% comment %} <li><a href="travel.html">Travel</a></li>
+<li><a href="fashion.html">Fashion</a></li> {% endcomment %}
+<li><a href={% url 'aboutPage' %}>About</a></li>
+{% comment %} <li><a href="contact.html">Contact</a></li> {% endcomment %}
 {% endblock nav-bar %}
 
 
 {% block content %}
 
-		<div id="colorlib-main">
-			<div class="hero-wrap h-100" style="background-image: url(static/images/bg_1.jpg);" data-stellar-background-ratio="0.5">
-				<div class="overlay"></div>
-				<div class="h-100 d-flex justify-content-center align-items-center">
-					<div class="col-md-8 text text-center">
-						<div class="img mb-4" style="background-image: url(static/images/author.jpg);"></div>
-						<div class="desc">
-							<h2 class="subheading">Hello I'm</h2>
-							<h1 class="mb-4">Shourya Rohilla</h1>
-							<p class="mb-4">I am a Software Engineer who is curious to learn more about the technologies that power the world.</p>
-							<p><a href="https://drive.google.com/file/d/1LoVgvO5nspBS49Rg0TBp3VpvKcaDQOsd/view?usp=sharing" class="btn-custom">Download My Resume <span class="ion-ios-arrow-forward"></span></a></p>
+<div class="hero-wrap h-100" style="background-image: url(static/images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+	<div class="overlay"></div>
+	<div class="h-100 d-flex justify-content-center align-items-center">
+		<div class="col-md-8 text text-center">
+			<div class="img mb-4" style="background-image: url(static/images/author.jpg);"></div>
+			<div class="desc">
+				<h2 class="subheading">Hello I'm</h2>
+				<h1 class="mb-4">Shourya Rohilla</h1>
+				<p class="mb-4">I am a Software Engineer who is curious to learn more about the technologies that
+					power the world.</p>
+				<p><a href="https://drive.google.com/file/d/1LoVgvO5nspBS49Rg0TBp3VpvKcaDQOsd/view?usp=sharing"
+						class="btn-custom">Download My Resume <span class="ion-ios-arrow-forward"></span></a></p>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center mb-5 pb-2">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+				<h2 class="mb-4">Skills</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="skills">
+					<div class="skill">
+						<div><h6 class="skill-name">C++</h4></div>
+						<div class="skill-bar">
+							<div class="skill-per" per="70%" style="max-width:70%"></div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<section class="ftco-section">
-    	<div class="container">
-    		<div class="row justify-content-center mb-5 pb-2">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Projects</h2>
-            <p>These are the projects that I have worked upon in the past few years.</p>
-          </div>
-        </div>
-    		<div class="row">
-    			<div class="col-md-4">
-    				<div class="blog-entry ftco-animate">
-							<a href="#" class="img img-2" style="background-image: url(static/images/project_1.jpg);"></a>
-							<div class="text text-2 pt-2 mt-3">
-								<span class="category mb-3 d-block"><a href="#">Flutter Application</a></span>
-	              <h3 class="mb-4"><a href="#">Notes Making App</a></h3>
-	              <p class="mb-4">This is an android application that lets user take notes.</p>
-	              	<div class="half">
-		              	<p><a href="https://github.com/Ninja1918/Notes-App" class="btn py-2">Check it out <span class="ion-ios-arrow-forward"></span></a></p>
-	              	</div>
-	              </div>
-	            </div>
+			<div class="col-md-6">
+				<div class="skills">
+					<div class="skill">
+						<div><h6 class="skill-name">Python</h4></div>
+						<div class="skill-bar">
+							<div class="skill-per" per="70%" style="max-width:70%"></div>
 						</div>
-    			</div>
-    	</div>
-    </section>    
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="skills">
+					<div class="skill">
+						<div><h6 class="skill-name">Java</h4></div>
+						<div class="skill-bar">
+							<div class="skill-per" per="30%" style="max-width:30%"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="skills">
+					<div class="skill">
+						<div><h6 class="skill-name">C</h4></div>
+						<div class="skill-bar">
+							<div class="skill-per" per="60%" style="max-width:60%"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="skills">
+					<div class="skill">
+						<div><h6 class="skill-name">Dart</h4></div>
+						<div class="skill-bar">
+							<div class="skill-per" per="50%" style="max-width:50%"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="skills">
+					<div class="skill">
+						<div><h6 class="skill-name">Flutter</h4></div>
+						<div class="skill-bar">
+							<div class="skill-per" per="50%" style="max-width:50%"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
 
 {% endblock content %}

@@ -1,0 +1,59 @@
+{% extends 'global/base.html' %}
+
+{% block nav-bar %}
+
+	<li><a href={% url 'indexPage' %}>Home</a></li>
+	<li class="colorlib-active"><a href={% url 'certificationPage' %}>Certifications & CP Profiles</a></li>
+	{% comment %} <li><a href="travel.html">Travel</a></li>
+	<li><a href="fashion.html">Fashion</a></li> {% endcomment %}
+	<li><a href={% url 'aboutPage' %}>About</a></li>
+	{% comment %} <li><a href="contact.html">Contact</a></li> {% endcomment %}
+{% endblock nav-bar %}
+
+{% block content %}
+
+<section class="ftco-section-2">
+    <div class="hero-wrap hero-wrap-2 h-25" style="background-image: url(static/images/certification.gif);">
+	<div class="overlay" style = "filter: blur(200px)"></div>
+	<div class="h-100 d-flex justify-content-center align-items-center">
+		<div class="col-md-8 text text-center">
+			<div class="desc">
+				<h1 class="mb-4">Certifications and CP Profiles</h1>
+			</div>
+		    </div>
+	    </div>
+    </div>
+    <div class="photograhy">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <a href="https://www.codechef.com/users/ninja1918" class="photography-entry img d-flex justify-content-center align-items-center"
+                    style="background-image: url(static/images/codechef.jpg);">
+                    <div class="overlay"></div>
+                    <div class="text text-center">
+                        <h3>CodeChef</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://codeforces.com/profile/Ninja1918" class="photography-entry img d-flex justify-content-center align-items-center"
+                    style="background-image: url(static/images/codeforces.png);">
+                    <div class="overlay"></div>
+                    <div class="text text-center">
+                        <h3>Codeforces</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://leetcode.com/Ninja1918/" class="photography-entry img d-flex justify-content-center align-items-center"
+                    style="background-image: url(static/images/leetcode.png);">
+                    <div class="overlay"></div>
+                    <div class="text text-center">
+                        <h3>LeetCode</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+</section>
+
+{% endblock content %}

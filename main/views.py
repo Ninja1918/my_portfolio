@@ -15,3 +15,10 @@ class about(View):
             "footer" : False
         }
         return render(request, 'main/about.html' , context)
+
+class certifications(View):
+    def get(self, request):
+        context = {
+            'footer' : True
+        }
+        return render(request, 'main/certifications.html', context)
