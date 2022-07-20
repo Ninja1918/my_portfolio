@@ -8556,9 +8556,11 @@ body{
   background: #132238;
   border-radius: 3px;
   position: relative;
+  font-family: "Ubuntu", sans-serif;
+}
+.bar-fill{
   animation: fillBars 2.5s 1;
 }
-
 .skill-per::before{
   content: attr(per);
   position: absolute;
@@ -8577,7 +8579,7 @@ body{
   width: 10px;
   height: 10px;
   background: #f1f1f1;
-  top: -20px;
+  top: 1px;
   right: 0;
   transform: translateX(50%) rotate(45deg);
   border-radius: 2px;

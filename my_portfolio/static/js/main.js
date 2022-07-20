@@ -183,9 +183,19 @@
 
     fixedContentPos: false
   });
-
-
-
-
 })(jQuery);
 
+$(document).ready(function () {
+    var windowHeight = $(window).height(),
+        gridTop = windowHeight * 0.3,
+        gridBottom = windowHeight * 0.6;
+    $(window).on('scroll', function () {
+        $('.skill-per').each(function () {
+            var thisTop = $(this).offset().top - $(window).scrollTop();
+
+            if (thisTop > gridTop && (thisTop + $(this).height()) < gridBottom) {
+                $(this).addClass('bar-fill');
+            }  
+        });
+    });
+});
